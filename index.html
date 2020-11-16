@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- Font Awesome icons (free version)-->
+          <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+          <!-- CSS only -->
+          <style>
+                    #bttn {
+                              margin-top: 20px;
+                              position: relative;
+                              left: 1035px;
+                              margin-bottom: 20px;
+                    }
+
+                    .footer-links {
+                              color: black;
+                              text-decoration: none;
+                    }
+
+                    .footer-links:hover {
+                              text-decoration: none;
+                              color: #343a40;
+                    }
+
+                    html {
+                              scroll-behavior: smooth;
+                    }
+          </style>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+                    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+                    crossorigin="anonymous">
+          <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+          <title> Alberto Dinca </title>
+          <style>
+                    #mobile-img {
+                              display: none;
+                    }
+
+                    .navbar {
+                              position: fixed;
+                              z-index: 5;
+                              width: 100%;
+                    }
+
+                    .carousel-item {
+                              width: 100%;
+                              height: 30%;
+                    }
+
+                    .icns:hover {
+                              color: grey;
+                    }
+
+                    @media(max-width: 700px) {
+                              #carouselExampleIndicators {
+                                        display: none;
+                              }
+
+                              #mobile-img {
+                                        display: block;
+                                        width: 100%;
+                              }
+                    }
+          </style>
+</head>
+
+<body>
+          <!-- NAVBAR -->
+          <nav class=" navbar navbar-expand-sm navbar-dark bg-dark">
+                    <a class="navbar-brand" href="./index.html">Alberto Dinca</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                                  <a class="nav-link" href="./index.html">Home <span
+                                                                      class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                                  <a class="nav-link" id="anchorAboutUS" href="#aboutUs">About Us</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                            Explore
+                                                  </a>
+                                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                            <a class="dropdown-item" href="#contactu">Location</a>
+                                                            <a class="dropdown-item"
+                                                                      href="#acreditations">Acreditations</a>
+                                                            <div class="dropdown-divider"></div>
+                                                            <a class="dropdown-item" target="_blank"
+                                                                      href="./CV_Dinc__Alberto_Gabriel_ro.pdf">CV</a>
+                                                  </div>
+                                        </li>
+                              </ul>
+                    </div>
+          </nav>
+          <!-- Mobile IMG -->
+          <img src="./poze/poza.jpg" style="padding-top: 30px; width: 100%;" alt="" id="mobile-img" srcset="">
+          <!-- Carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                              <div class=" carousel-item active">
+                                        <img src="https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                  class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                        <img src="./poze/pc.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                        <img src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&rect=37%2C29%2C4955%2C3293&q=45&auto=format&w=926&fit=clip"
+                                                  class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                        <img src="https://live.staticflickr.com/1889/29221108687_d3c1a3f85b_b.jpg"
+                                                  class="d-block w-100" alt="...">
+                              </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                    </a>
+          </div>
+          <!-- Jumbotron -->
+          <div id="aboutUs" class="container" style="padding-top: 20px;">
+                    <div class="jumbotron bg-dark" style="color: white;">
+                              <h1>About Us</h1>
+                              <p style="padding-top: 20px;" id="acreditations">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit.
+                                        Consequatur recusandae facilis nam officiis aliquid aperiam, in at praesentium
+                                        omnis quasi maxime asperiores aspernatur eius, quod possimus accusamus. Aliquam
+                                        tenetur fugit, aut dignissimos nihil, sunt, explicabo alias ut odit ad hic
+                                        nesciunt doloribus. Molestiae itaque cumque aspernatur nam voluptas ut quod
+                                        repellendus iusto quidem autem qui, dignissimos dolorem dolor! Porro vero
+                                        incidunt in labore dolores sunt! Error omnis ipsa asperiores esse. Dolore iure
+                                        consequatur explicabo impedit in laboriosam quis officiis aspernatur.</p>
+                              <h2> Acreditations</h2>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel harum quasi dolor! Facere
+                                        laborum at eligendi tenetur amet ullam, praesentium excepturi expedita
+                                        inventore. Id maxime deleniti eos esse atque commodi minima ex aspernatur,
+                                        quidem eius vel nobis nulla non similique.
+                              </p>
+                    </div>
+          </div>
+
+          <!-- Textarea -->
+          <h1 style="text-align: center;">Send Us a message</h1>
+          <form action="mailto:d_alberto9@yahoo.com method=" post">
+                    <div class="container-lg ">
+                              <div class="input-group mb-3">
+                                        <input style="height: 50px;" type="text" class="form-control" placeholder="Name"
+                                                  aria-label="Name" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                                  <span class="input-group-text bg-dark " style="color: white;"
+                                                            id="basic-addon2">Enter Full Name</span>
+                                        </div>
+                              </div>
+
+                              <div class="input-group mb-3">
+                                        <input style="height: 50px;" type="tel" class="form-control"
+                                                  placeholder="Telephone Number" aria-label="Telephone Number"
+                                                  aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                                  <span class="input-group-text bg-dark " style="color: white;"
+                                                            id="basic-addon2"> Enter Phone Number</span>
+                                        </div>
+
+
+
+                              </div>
+                              <div class="input-group mb-3">
+                                        <input style="height: 50px;" type="email" class="form-control"
+                                                  placeholder="E-mail Address" aria-label="E-mail Address"
+                                                  aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                                  <span class="input-group-text bg-dark " style="color: white;"
+                                                            id="basic-addon2">@example.com</span>
+                                        </div>
+
+                              </div>
+                              <div class="input-group">
+                                        <div class="input-group-prepend">
+                                                  <span class="input-group-text bg-dark" style="color: white;">Write
+                                                            your message
+                                                            here</span>
+                                        </div>
+                                        <textarea style="height: 200px;" class="form-control"
+                                                  aria-label="Write your message"></textarea>
+                              </div>
+                              <button type="submit" id="bttn" class="btn btn-dark">Submit</button>
+                    </div>
+          </form>
+          <!-- Footer -->
+          <footer class="page-footer font-small unique-color-dark">
+
+                    <div class="btn-dark">
+                              <div class="container">
+
+                                        <!-- Grid row-->
+                                        <div class="row py-4 d-flex align-items-center">
+
+                                                  <!-- Grid column -->
+                                                  <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                                                            <h6 class="mb-0">Get connected with us on social networks!
+                                                            </h6>
+                                                  </div>
+                                                  <!-- Grid column -->
+
+                                                  <!-- Grid column -->
+                                                  <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                                                            <!-- Facebook -->
+                                                            <a class="fb-ic " style="color: white;"
+                                                                      href="https://www.facebook.com/alberto.dinca.1/"
+                                                                      target="_blank">
+                                                                      <i class="fab fa-facebook-f white-text mr-4 icns">
+                                                                      </i>
+                                                            </a>
+                                                            </a>
+                                                            <!--Linkedin -->
+                                                            <a class="li-ic " style="color: white;"
+                                                                      href="https://www.linkedin.com/in/alberto-dinca-2450011b0/"
+                                                                      target="_blank">
+                                                                      <i
+                                                                                class="fab fa-linkedin-in white-text mr-4 icns">
+                                                                      </i>
+                                                            </a>
+                                                            <!--Instagram-->
+                                                            <a class="ins-ic " style="color:white;"
+                                                                      href="https://www.instagram.com/albertoazis/?hl=en"
+                                                                      target="_blank">
+                                                                      <i class="fab fa-instagram white-text icns"> </i>
+                                                            </a>
+
+                                                  </div>
+                                                  <!-- Grid column -->
+
+                                        </div>
+                                        <!-- Grid row-->
+
+                              </div>
+                    </div>
+
+                    <!-- Footer Links -->
+                    <div class="container text-center text-md-left mt-5">
+
+                              <!-- Grid row -->
+                              <div class="row mt-3">
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                                                  <!-- Content -->
+                                                  <h6 class="text-uppercase font-weight-bold">Alberto Dinca </h6>
+                                                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                                                            style="width: 60px;">
+                                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                                                            omnis non est optio nulla esse minima nostrum eos, odit
+                                                            voluptate!</p>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                                                  <!-- Links -->
+                                                  <h6 class="text-uppercase font-weight-bold">Products</h6>
+                                                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                                                            style="width: 60px;">
+                                                  <p>
+                                                            <a class="footer-links"
+                                                                      href="./about.html#experience">Personal
+                                                                      Training</a>
+                                                  </p>
+                                                  <p>
+                                                            <a class="footer-links" href="./about.html#education">Web
+                                                                      Development</a>
+                                                  </p>
+                                                  <p>
+                                                            <a class="footer-links"
+                                                                      href="./about.html#skills">Education</a>
+                                                  </p>
+                                                  <p>
+                                                            <a class="footer-links"
+                                                                      href="./about.html#interests">Interests</a>
+                                                  </p>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                                                  <!-- Links -->
+                                                  <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                                                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                                                            style="width: 60px;">
+
+                                                  <p>
+                                                            <a class="footer-links" href="./about.html#awards">Contact
+                                                                      Us</a>
+                                                  </p>
+
+                                                  <p>
+                                                            <a class="footer-links" target="_blank"
+                                                                      href="https://support.google.com/?hl=en">Help</a>
+                                                  </p>
+                                                  <p>
+                                                            <a class="footer-links" target="_blank"
+                                                                      href="https://policies.google.com/privacy?hl=en-US">Legal</a>
+                                                  </p>
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                                        <!-- Grid column -->
+                                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                                                  <!-- Links -->
+                                                  <h6 class="text-uppercase font-weight-bold" id="contactu">Contact</h6>
+                                                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+                                                            style="width: 60px;">
+                                                  <p>
+                                                            <i class="fas fa-home mr-3"></i> <a target="_blank"
+                                                                      class="footer-links"
+                                                                      href="https://www.google.com/maps/place/Bucharest/@44.4377401,25.9545541,11z/data=!3m1!4b1!4m5!3m4!1s0x40b1f93abf3cad4f:0xac0632e37c9ca628!8m2!3d44.4267674!4d26.1025384">Bucharest,
+                                                                      RO</a></p>
+                                                  <p>
+                                                            <i class="fas fa-envelope mr-3 "></i> <a
+                                                                      class="footer-links"
+                                                                      href="mailto:D_alberto9@yahoo.com">D_alberto9@yahoo.com
+                                                            </a>
+                                                  </p>
+                                                  <p>
+                                                            <i class="fas fa-phone mr-3"></i> <a class="footer-links"
+                                                                      href="tel:+40731338971">+ 40 731 338 971</a></p>
+
+
+                                        </div>
+                                        <!-- Grid column -->
+
+                              </div>
+                              <!-- Grid row -->
+
+                    </div>
+                    <!-- Footer Links -->
+
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3">© 2020 Copyright
+                    </div>
+                    <!-- Copyright -->
+
+          </footer>
+          <!-- Footer -->
+
+          <!-- JS, Popper.js, and jQuery -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                    crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                    crossorigin="anonymous"></script>
+</body>
+
+</html>
