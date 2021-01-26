@@ -1,3 +1,2 @@
-Langing Page <a href="https://alberto-dinca.vercel.app/"> LIVE</a>
-
+[Langing Page LIVE](https://alberto-dinca.vercel.app/)
  
